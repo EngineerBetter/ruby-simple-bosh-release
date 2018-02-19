@@ -17,7 +17,7 @@ case $1 in
     export PATH=/var/vcap/packages/ruby_2.4.3/bin:$PATH
 
     exec /var/vcap/packages/ruby_2.4.3/bin/bundle exec \
-      rackup -p <%= p('port') %> \
+      rackup -o 0.0.0.0 -p <%= p('port') %> \
       >>  $LOG_DIR/application.stdout.log \
       2>> $LOG_DIR/application.stderr.log
 
