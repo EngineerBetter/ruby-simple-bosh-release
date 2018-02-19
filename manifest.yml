@@ -14,16 +14,16 @@ jobs:
 - name: application
   template: application
   instances: 1
-  vm_type: concourse-web-small
+  vm_type: minimal
   stemcell: trusty
   azs:
   - z1
   networks:
-    - name: public
+  - name: default
   properties:
     port: 80
 
 stemcells:
 - alias: trusty
   os: ubuntu-trusty
-  version: '3468.15'
+  version: latest
