@@ -1,0 +1,29 @@
+name: webapp
+
+releases:
+- name: application
+  version: latest
+
+update:
+  canaries: 1
+  canary_watch_time: 30000-240000
+  update_watch_time: 30000-600000
+  max_in_flight: 1
+
+jobs:
+- name: application
+  template: application
+  instances: 1
+  vm_type: concourse-web-small
+  stemcell: trusty
+  azs:
+  - z1
+  networks:
+    - name: public
+  properties:
+    port: 80
+
+stemcells:
+- alias: trusty
+  os: ubuntu-trusty
+  version: '3468.15'
