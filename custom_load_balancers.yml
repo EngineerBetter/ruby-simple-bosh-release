@@ -1,0 +1,14 @@
+- type: replace
+  path: /vm_extensions/-
+  value:
+    name: application_load_balancer
+    cloud_properties:
+      ports:
+      - host: 9090
+- type: replace
+  path: /vm_extensions/-
+  value:
+    name: minio_load_balancer
+    cloud_properties:
+      ports:
+      - host: 9000

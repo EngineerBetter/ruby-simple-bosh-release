@@ -16,7 +16,7 @@ jobs:
   instances: 1
   vm_type: minimal
   vm_extensions:
-  - custom_load_balancer
+  - application_load_balancer
   stemcell: trusty
   azs:
   - z1
