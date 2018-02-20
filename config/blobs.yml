@@ -1,1 +1,8 @@
---- {}
+ruby_2.4.3/ruby-2.4.3.tar.gz:
+  size: 14178729
+  object_id: a94508fd-d43f-43f6-644a-2e9ee4f8441f
+  sha: 787b7f4e90fb4b39a61bc1a31eb7765f875a590c
+ruby_2.4.3/rubygems-2.7.6.tgz:
+  size: 852486
+  object_id: e02d7ac4-e100-465d-7849-eda68498b835
+  sha: 72a14791b96cc05a79d2a649fe7170fd1faf3e0a

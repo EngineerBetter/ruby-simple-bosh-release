@@ -1,1 +1,8 @@
-name: application
+---
+final_name: application
+blobstore:
+  provider: s3
+  options:
+    bucket_name: myboshbucket
+    host: http://35.168.239.166
+    port: 9000
