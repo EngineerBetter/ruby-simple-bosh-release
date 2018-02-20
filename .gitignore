@@ -13,3 +13,4 @@ releases/**/*.tgz
 *#
 #*
 tmp
+config/blobs.yml
