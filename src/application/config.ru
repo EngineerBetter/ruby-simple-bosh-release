@@ -5,7 +5,7 @@ require 'json'
 
 class Web < Sinatra::Base
   get '/' do
-    "Congratulation! You made a BOSH release\n"
+    "Congratulations! You made a BOSH release\n"
   end
 end
 
