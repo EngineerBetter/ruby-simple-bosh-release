@@ -2,7 +2,7 @@
 name: application
 
 dependencies:
-- ruby_2.4.3
+- ruby
 
 files:
 - application/**/*

@@ -4,7 +4,7 @@ cp -a application/* ${BOSH_INSTALL_TARGET}
 
 cd ${BOSH_INSTALL_TARGET}
 
-/var/vcap/packages/ruby_2.4.3/bin/bundle install \
+/var/vcap/packages/ruby/bin/bundle install \
   --local \
   --deployment \
   --without development test

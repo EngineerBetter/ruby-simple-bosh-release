@@ -6,7 +6,7 @@ templates:
 
 packages:
 - application
-- ruby_2.4.3
+- ruby
 
 properties:
   port:

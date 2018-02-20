@@ -1,6 +1,6 @@
 set -e -x
 
-tar xzf ruby_2.4.3/ruby-2.4.3.tar.gz
+tar xzf ruby/ruby-2.4.3.tar.gz
 pushd ruby-2.4.3
   ./configure \
     --prefix=${BOSH_INSTALL_TARGET} \
@@ -10,7 +10,7 @@ pushd ruby-2.4.3
   make install
 popd
 
-tar zxvf ruby_2.4.3/rubygems-2.7.6.tgz
+tar zxvf ruby/rubygems-2.7.6.tgz
 pushd rubygems-2.7.6
   ${BOSH_INSTALL_TARGET}/bin/ruby setup.rb
 popd

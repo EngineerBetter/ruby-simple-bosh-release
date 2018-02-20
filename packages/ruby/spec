@@ -1,0 +1,8 @@
+---
+name: ruby
+
+dependencies: []
+
+files:
+- ruby/ruby-2.4.3.tar.gz # http://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.3.tar.gz
+- ruby/rubygems-2.7.6.tgz # https://rubygems.org/rubygems/rubygems-2.7.6.tgz
