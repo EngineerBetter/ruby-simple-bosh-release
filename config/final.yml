@@ -4,5 +4,5 @@ blobstore:
   provider: s3
   options:
     bucket_name: myboshbucket
-    host: http://35.168.239.166
+    host: http://<BOSH_DIRECTOR_IP>
     port: 9000
