@@ -2,7 +2,7 @@
 name: application
 
 templates:
-  ctl.erb: bin/ctl
+  bpm.yml.erb: config/bpm.yml
 
 packages:
 - application

@@ -3,6 +3,8 @@ name: application
 releases:
 - name: application
   version: latest
+- name: bpm
+  version: latest
 
 update:
   canaries: 1
@@ -12,7 +14,6 @@ update:
 
 jobs:
 - name: application
-  template: application
   instances: 1
   vm_type: minimal
   vm_extensions:
@@ -24,6 +25,11 @@ jobs:
   - name: default
   properties:
     port: 9090
+  templates:
+  - name: bpm
+    release: bpm
+  - name: application
+    release: application
 
 stemcells:
 - alias: trusty
