@@ -1,5 +1,5 @@
 check process application
   with pidfile /var/vcap/sys/run/bpm/application/application.pid
   start program "/var/vcap/jobs/bpm/bin/bpm start application"
-  stop program "/var/vcap/jobs/bpm/bin/bpm stop applicationbl"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop application"
   group vcap
