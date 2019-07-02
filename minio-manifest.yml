@@ -6,8 +6,8 @@ releases:
   version: latest
 
 stemcells:
-- alias: default
-  os: ubuntu-trusty
+- alias: xenial
+  os: ubuntu-xenial
   version: latest
 
 instance_groups:
@@ -30,7 +30,7 @@ instance_groups:
   vm_extensions:
     - minio_load_balancer
   persistent_disk_type: 5GB
-  stemcell: default
+  stemcell: xenial
 
 update:
   canaries: 1
