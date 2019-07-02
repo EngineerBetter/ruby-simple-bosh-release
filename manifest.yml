@@ -10,22 +10,24 @@ update:
   update_watch_time: 30000-600000
   max_in_flight: 1
 
-jobs:
-- name: application
-  template: application
+instance_groups:
+- name: application-vm
   instances: 1
   vm_type: minimal
   vm_extensions:
   - application_load_balancer
-  stemcell: trusty
+  stemcell: xenial
   azs:
   - z1
   networks:
   - name: default
+  jobs:
+  - name: application
+    release: application
   properties:
     port: 9090
 
 stemcells:
-- alias: trusty
-  os: ubuntu-trusty
+- alias: xenial
+  os: ubuntu-xenial
   version: latest
