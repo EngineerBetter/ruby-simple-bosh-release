@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail
+
+source /var/vcap/packages/ruby-2.7.4-r0.69.0/bosh/runtime.env
+source /var/vcap/packages/application/bosh/runtime.env
+
+cd /var/vcap/packages/application
+
+bundle exec rackup -o 0.0.0.0 -p <%= p('port') %>

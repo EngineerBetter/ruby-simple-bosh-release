@@ -1,0 +1,8 @@
+---
+name: application
+
+dependencies:
+- ruby-2.7.4-r0.69.0
+
+files:
+- application/**/*

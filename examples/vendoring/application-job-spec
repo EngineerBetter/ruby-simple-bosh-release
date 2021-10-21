@@ -1,0 +1,16 @@
+---
+name: application
+
+templates:
+  ctl.erb: bin/ctl
+  bpm.yml.erb: config/bpm.yml
+  start.sh.erb: bin/start.sh
+
+packages:
+- application
+- ruby-2.7.4-r0.69.0
+
+properties:
+  port:
+    description: The port the application listens to
+    default: 80

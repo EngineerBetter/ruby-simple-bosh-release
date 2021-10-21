@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euo pipefail
+
+export PATH=/var/vcap/packages/ruby/bin:$PATH
+
+cd /var/vcap/packages/application
+
+bundle exec rackup -o 0.0.0.0 -p <%= p('port') %>
